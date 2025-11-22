@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-user-check"></i> Verificador de Idade</h1>
+            <p>Descubra sua faixa etária e gênero com base no ano de nascimento</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <div class="form-group">
+                <label for="anotxt"><i class="fas fa-calendar-alt"></i> Ano de Nascimento</label>
+                <input type="number" id="anotxt" class="input-field" placeholder="Digite o ano de nascimento" min="1900" max="2023">
+            </div>
+            
+            <div class="form-group">
+                <label><i class="fas fa-venus-mars"></i> Sexo</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="box" id="masc">
+                        <i class="fas fa-mars"></i> Masculino
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="box" id="fem">
+                        <i class="fas fa-venus"></i> Feminino
+                    </label>
+                </div>
+            </div>
+            
+            <button class="btn" onclick="verificar()">
+                <i class="fas fa-search"></i> Verificar
+            </button>
+            
+            <div id="res" class="fade-in">
+                <p>Preencha os dados para ver o resultado.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Trabalho Front-End - Verificador de Idade</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="scripts/main.js"></script>
+</html>
