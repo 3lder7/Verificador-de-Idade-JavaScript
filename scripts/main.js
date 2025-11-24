@@ -12,10 +12,14 @@ function verificar() {
   img.setAttribute("id", "foto");
 
   //verificação de erro
-  if (ano == "") {
+  if (ano == "" || isNaN(ano)) {
     window.alert("ERRO! Verifique o preenchimento.");
+    return 0;
   } else if (ano > anojava) {
     window.alert("ERRO! Ano inválido.");
+    return 0;
+  } else if (ano == anojava) {
+    window.alert("ERRO! Ano não pode ser o atual.");
     return 0;
   }
 
